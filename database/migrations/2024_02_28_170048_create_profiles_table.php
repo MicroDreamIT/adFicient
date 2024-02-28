@@ -6,17 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-
-//- "Are you married?" - Yes/No
-//- If Yes, the following fields show up conditionally:
-//- Date of marriage - same logic as Date of birth (If date of marriage occurred before the user was 18 years old, show an error message "You are not eligible to apply because your marriage occurred before your 18th birthday." and do not allow submission of form.)
-//- Country of marriage
-
-//- Are you widowed? Yes/No
-//- Have you ever been married in the past? Yes/No
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
         Schema::create('profiles', function (Blueprint $table) {
